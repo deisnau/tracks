@@ -1,4 +1,3 @@
-import geopandas as gpd
 import gpxpy
 from utils import calculate_distance
 
@@ -26,13 +25,3 @@ def load_gpx_as_geodataframe(gpx_file_path):
 
     return lines
 
-
-if __name__ == "__main__":
-    # gpx_file = gpd.read_file("../track_example.gpx")
-
-    gpx_file_path = "./track_example.gpx"
-
-    gdf_lines = load_gpx_as_geodataframe(gpx_file_path)
-
-    print("\nTracks:")
-    print(gdf_lines)
